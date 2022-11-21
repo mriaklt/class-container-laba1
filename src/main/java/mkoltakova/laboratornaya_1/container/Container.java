@@ -1,7 +1,7 @@
 
 
-//  Github: https://github.com/mriaklt/class-container-laba1.git
-//
+// Github: https://github.com/mriaklt/class-container-laba1.git
+
 package mkoltakova.laboratornaya_1.container;
 
 /**
