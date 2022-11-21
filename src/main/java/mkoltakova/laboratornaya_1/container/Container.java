@@ -1,4 +1,6 @@
 
+
+//  Github: https://github.com/mriaklt/class-container-laba1.git
 package mkoltakova.laboratornaya_1.container;
 
 /**
@@ -8,8 +10,8 @@ package mkoltakova.laboratornaya_1.container;
 public class Container {
     private Node head;
     private Node tail;
-    
-    
+
+
     // Добавить элемент в конец
     public void append(int _num) {
         if(head!=null) {
@@ -24,8 +26,8 @@ public class Container {
             tail = head;
         }
     }
-    
-    // Удалить элемент по индексу 
+
+    // Удалить элемент по индексу
     public void remove(int index){
         Node tmp = head.getNext();
         Node prev_tmp = head;
@@ -34,14 +36,14 @@ public class Container {
         do {
             if(index==i+1) {
                 //System.out.println("Just removed " + tmp.getNum() + " at index " + (i+1));
-                prev_tmp.setNext(tmp.getNext()); 
+                prev_tmp.setNext(tmp.getNext());
             }
             i++;
             prev_tmp = tmp;
             tmp = tmp.getNext();
-            
+
         } while(tmp!= null);
-       
+
     }
 
     // получить элемент по индексу
@@ -69,6 +71,6 @@ public class Container {
         System.out.println("");
 
     }
-        
-        
+
+
 }
